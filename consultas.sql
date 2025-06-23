@@ -70,7 +70,8 @@ FROM
     Matricula
 WHERE
     bolsa > 1532;
-o nome das disciplinas que foram ministradas, mas não receberam nenhuma avaliação de disciplina
+
+--6) o nome das disciplinas que foram ministradas, mas não receberam nenhuma avaliação de disciplina
 SELECT DISTINCT d.codigo
 FROM Ministra m
 JOIN Disciplina d ON m.codigo_disciplina = d.codigo
@@ -80,7 +81,7 @@ LEFT JOIN Avaliacao_Disciplina a
     AND m.semestre = a.semestre
 WHERE a.codigo_disciplina IS NULL;
 
---6) professores que ministraram a mesma disciplina por 2 anos consecutivos
+--7) professores que ministraram a mesma disciplina por 2 anos consecutivos
 SELECT DISTINCT
     p.nome,
     p.sobrenome,
