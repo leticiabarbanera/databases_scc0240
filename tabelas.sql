@@ -81,7 +81,8 @@ CREATE TABLE Usuario (
     email VARCHAR(100),
     senha VARCHAR(100),
     vinculo VARCHAR(30),
-    PRIMARY KEY (nome, sobrenome, telefone)
+    PRIMARY KEY (nome, sobrenome, telefone),
+    UNIQUE (email, senha)
 );
 
 CREATE TABLE Aluno (
