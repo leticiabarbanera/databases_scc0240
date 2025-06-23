@@ -4,6 +4,7 @@ SELECT DISTINCT
     m.nome_professor,
     m.sobrenome_professor,
     m.telefone_professor,
+    m.codigo_disciplina,
     m.ano_letivo,
     m.semestre
 FROM Ministra m
@@ -41,7 +42,7 @@ HAVING
 SELECT * FROM Aprovados2025_1 para listar todos os alunos aprovados no 1 semestre de 2025
 
 --view simples
-CREATE OR REPLACE VIEW Grade_Curricular AS
+CREATE VIEW Grade_Curricular AS
 SELECT
     c.codigo AS codigo_curso,
     c.nome AS nome_curso,
