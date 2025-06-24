@@ -146,7 +146,20 @@ INSERT INTO Aluno (nome, sobrenome, telefone, campus) VALUES
 ('Amanda', 'Vieira', '017981215402', 'ICMC'),
 ('Tiago', 'Pires', '017981215403', 'ICMC'),
 ('Renata', 'Dias', '017981215404', 'ICMC'),
-('Daniel', 'Souza', '017981215405', 'ICMC')
+('Daniel', 'Souza', '017981215405', 'ICMC'), 
+('Lucas', 'Ferreira', '017982315678', 'ICMC'),
+('Mariana', 'Silva', '017983412567', 'ICMC'),
+('Pedro', 'Oliveira', '017984523456', 'ICMC'),
+('Ana', 'Souza', '017985634512', 'ICMC'),
+('Bruno', 'Almeida', '017986745621', 'ICMC'),
+('Juliana', 'Martins', '017987856734', 'ICMC'),
+('Felipe', 'Lima', '017988967845', 'ICMC'),
+('Camila', 'Rocha', '017989078956', 'ICMC'),
+('Rafael', 'Carvalho', '017980189067', 'ICMC'),
+('Larissa', 'Barbosa', '017981290178', 'ICMC'),
+('Gustavo', 'Mendes', '017982301289', 'ICMC'),
+('Beatriz', 'Ribeiro', '017983412390', 'ICMC'),
+('Thiago', 'Pereira', '017984523401', 'ICMC')
 ON CONFLICT DO NOTHING;
 
 INSERT INTO Matricula (nome_aluno, sobrenome_aluno, telefone_aluno, ano_letivo, semestre, codigo_disciplina,
@@ -195,7 +208,20 @@ INSERT INTO Professor (nome, sobrenome, telefone, especializacao, titulacao, cam
 ('Caetano', 'Traina', '016991011111', 'Sistemas Inteligentes', 'Doutor', 'ICMC'),
 ('Solange', 'Ribeiro', '016991022222', 'Visualização Computacional', 'Doutora', 'ICMC'),
 ('Maria', 'Cristina', '016991033333', 'Estruturas de Dados', 'Doutora', 'ICMC'),
-('Alneu', 'Souza', '016991044444', 'Engenharia de Software', 'Doutor', 'ICMC')
+('Alneu', 'Souza', '016991044444', 'Engenharia de Software', 'Doutor', 'ICMC'),
+('André', 'Ponce', '016992157899', 'Inteligência Artificial', 'Doutor', 'ICMC'),
+('Cristina', 'Aguiar', '016993268900', 'Redes de Computadores', 'Mestre', 'ICMC'),
+('Fernando', 'Osorio', '016994379011', 'Estruturas de Dados', 'Doutor', 'ICMC'),
+('Thiago', 'Pardo', '016995480122', 'Computação Gráfica', 'Doutora', 'ICMC'),
+('Ricardo', 'Macarccini', '016996591233', 'Algoritmos', 'Doutor', 'ICMC'),
+('Katiane', 'Silva', '016997602344', 'Engenharia de Software', 'Mestre', 'ICMC'),
+('Eduardo', 'Simoes', '016998713455', 'Sistemas Distribuídos', 'Doutor', 'ICMC'),
+('Roseli', 'Aparecido', '016999824566', 'Processamento de Imagens', 'Doutora', 'ICMC'),
+('Marcelo', 'Manzato', '016990935677', 'Programação Competitiva', 'Doutor', 'ICMC'),
+('Francisco', 'Rodrigues', '016991046788', 'Computação em Nuvem', 'Mestre', 'ICMC'),
+('Rudinei', 'Goularte', '016992157899', 'Mineração de Dados', 'Doutor', 'ICMC'),
+('Elaine', 'Goularte', '016993268900', 'Ciência de Dados', 'Doutora', 'ICMC'),
+('Joao', 'Rosa', '016994379011', 'Sistemas Operacionais', 'Mestre', 'ICMC')   
 ON CONFLICT DO NOTHING;
 
 INSERT INTO Ministra (nome_professor, sobrenome_professor, telefone_professor,
